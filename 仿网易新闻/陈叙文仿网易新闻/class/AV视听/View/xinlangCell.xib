@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="xinlangCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_platform_email.png" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-us-Y5T">
+                        <rect key="frame" x="20" y="10" width="40" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="RAq-ob-jaG"/>
+                            <constraint firstAttribute="height" constant="40" id="iyz-uA-2Bb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="易信朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI0-rY-JlM">
+                        <rect key="frame" x="0.0" y="52" width="80" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="vN2-V3-pJW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mI0-rY-JlM" secondAttribute="trailing" id="38g-Ua-wHN"/>
+                <constraint firstItem="mI0-rY-JlM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xi4-1i-Fhw"/>
+                <constraint firstItem="mI0-rY-JlM" firstAttribute="top" secondItem="k9V-us-Y5T" secondAttribute="bottom" constant="2" id="YDo-Ct-RSz"/>
+                <constraint firstItem="k9V-us-Y5T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jbP-dA-csC"/>
+                <constraint firstItem="k9V-us-Y5T" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qVy-mc-SOC"/>
+            </constraints>
+            <size key="customSize" width="80" height="84"/>
+            <connections>
+                <outlet property="imageName" destination="mI0-rY-JlM" id="hgE-S3-WYk"/>
+                <outlet property="imageV" destination="k9V-us-Y5T" id="1O8-Mo-s4V"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="173"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="share_platform_email.png" width="40" height="40"/>
+    </resources>
+</document>

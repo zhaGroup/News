@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="KGk-i7-Jjw" customClass="MyViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cK-uz-DXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="xM5-jI-wz4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlx-it-h7J">
+                        <rect key="frame" x="13" y="8" width="344" height="45"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx2-pv-9rr" userLabel="buttonView">
+                        <rect key="frame" x="0.0" y="180" width="375" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jk6-ex-fkt">
+                                <rect key="frame" x="8" y="8" width="112" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D6-MB-xrM">
+                                <rect key="frame" x="251" y="4" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" image="pluginmanager_icon_message"/>
+                                <connections>
+                                    <action selector="comment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Zi8-aE-J9k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5i-1n-0fE">
+                                <rect key="frame" x="277" y="8" width="34" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERL-GK-eFP">
+                                <rect key="frame" x="313" y="2" width="33" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97666266025641024" green="0.73149574644373638" blue="0.75381700019717146" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="readercell_share_highlight">
+                                    <color key="titleColor" red="0.99174312840000001" green="1" blue="0.96286368099999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="transmit:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cGa-h3-d8N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.87698317307692308" green="0.87698317307692308" blue="0.87698317307692308" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTZ-kD-qqR">
+                        <rect key="frame" x="203" y="145" width="164" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99174312840000001" green="1" blue="0.96286368099999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_video_cell_play" translatesAutoresizingMaskIntoConstraints="NO" id="Wpq-qM-Qko">
+                        <rect key="frame" x="166" y="76" width="35" height="34"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="0cK-uz-DXt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6EF-rx-H8y"/>
+                    <constraint firstAttribute="trailing" secondItem="0cK-uz-DXt" secondAttribute="trailing" id="Npb-Jo-bJj"/>
+                    <constraint firstItem="xx2-pv-9rr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SEU-q7-OCi"/>
+                    <constraint firstItem="xx2-pv-9rr" firstAttribute="top" secondItem="0cK-uz-DXt" secondAttribute="bottom" id="TM3-3E-Qaa"/>
+                    <constraint firstItem="0cK-uz-DXt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a8c-hb-6m6"/>
+                    <constraint firstAttribute="trailing" secondItem="xx2-pv-9rr" secondAttribute="trailing" id="cxK-8l-NlZ"/>
+                    <constraint firstAttribute="bottom" secondItem="xx2-pv-9rr" secondAttribute="bottom" id="ogp-1w-Uie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="imageV" destination="0cK-uz-DXt" id="zg8-NJ-4OA"/>
+                <outlet property="playNumberLabel" destination="yTZ-kD-qqR" id="v4b-Ed-VGm"/>
+                <outlet property="replyLabel" destination="b5i-1n-0fE" id="JrQ-2M-zt1"/>
+                <outlet property="sourceLabel" destination="Jk6-ex-fkt" id="Q0t-Cs-yTa"/>
+                <outlet property="titleLabel" destination="mlx-it-h7J" id="uQd-7y-ntz"/>
+            </connections>
+            <point key="canvasLocation" x="334.5" y="21.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="night_video_cell_play" width="16" height="16"/>
+        <image name="pluginmanager_icon_message" width="30" height="30"/>
+        <image name="readercell_share_highlight" width="33" height="33"/>
+    </resources>
+</document>
